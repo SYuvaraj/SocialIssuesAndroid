@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:fillViewport="false"-->
+        <!--android:background="#e4e4e4"-->
+        <!--android:gravity="center"-->
+        <!-->-->
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/captured_snap"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:src="@drawable/ic_launcher"
+            android:layout_marginTop="0dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="0dp"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/latlabel"
+                    android:padding="10dp"
+                    android:orientation="horizontal"
+                    android:text="@string/latitude"
+                    android:textSize="12sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="left"
+                    android:id="@+id/latvalue"
+                    android:padding="10dp"
+                    android:textSize="12sp"
+                    android:layout_alignParentTop="false"
+                    android:layout_marginLeft="100dp" />
+           </RelativeLayout>
+    </LinearLayout>
+
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:id="@+id/latrelative"
+            android:gravity="center">
+             <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lnglabel"
+                    android:padding="10dp"
+                    android:orientation="horizontal"
+                    android:text="@string/longitude"
+                    android:textSize="12sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/lngvalue"
+                    android:gravity="left"
+                    android:padding="10dp"
+                    android:textSize="12sp"
+                    android:layout_alignParentTop="false"
+                    android:layout_marginLeft="100dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:id="@+id/timerelative"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/currentTimelabel"
+                android:padding="10dp"
+                android:orientation="horizontal"
+                android:text="@string/currentTimelabel"
+                android:textSize="12sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/currentTime"
+                android:gravity="left"
+                android:padding="10dp"
+                android:textSize="12sp"
+                android:layout_alignParentTop="false"
+                android:layout_marginLeft="100dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="0dp"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/upload_icon"
+                android:orientation="vertical"
+                android:padding="0dp"
+                android:src="@drawable/upload_icon"
+                android:layout_weight="1.72"
+                android:layout_gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+<!--</ScrollView>-->
